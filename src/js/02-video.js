@@ -2,7 +2,8 @@ import { throttle } from 'lodash';
 
 const iframeVimeo = new Vimeo.Vimeo(document.querySelector('#vimeo-Vimeo'));
 
-const startTime = parseFloat(localStorage.getItem('videoVimeo-current-time')) || 0;
+const startTime =
+  parseFloat(localStorage.getItem('videoVimeo-current-time')) || 0;
 
 iframeVimeo.setCurrentTime(4);
 

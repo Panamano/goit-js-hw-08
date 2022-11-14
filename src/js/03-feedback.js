@@ -2,8 +2,6 @@ import throttle from 'lodash';
 
 const feedbackForm = document.querySelector('.feedback-form');
 
-// submiting
-
 feedbackForm.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
@@ -23,8 +21,6 @@ function handleSubmit(event) {
 
   event.target.reset();
 }
-
-// logging
 
 const localStorageLabel = 'feedback-form-state';
 const localStorageFormData = localStorage.getItem(localStorageLabel);

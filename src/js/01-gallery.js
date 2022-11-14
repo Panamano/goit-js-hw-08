@@ -20,9 +20,10 @@ const newGallery = galleryItems
   })
   .join('');
 
+  
+
 const galleryPictures = document.querySelector('.gallery');
 
 galleryPictures.insertAdjacentHTML('beforeend', newGallery);
-//new SimpleLightbox('.gallery a', { /* options */ });
 const galleryLightbox = new SimpleLightbox('.gallery a', { captionDelay: 250 });
 
